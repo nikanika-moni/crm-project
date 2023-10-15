@@ -49,7 +49,7 @@
             </div>
         </div>
     </form>
-    <a href="/admin/create" class="btn btn-success">新規追加</a>
+    <a href="/crm/create" class="btn btn-success">新規追加</a>
     <table class="table table-striped table-bordered my-3">
         <thead class="table-dark">
             <tr>
