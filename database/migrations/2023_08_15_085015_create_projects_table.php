@@ -20,7 +20,6 @@ return new class extends Migration
             $table->date('end_date')->nullable();
             $table->boolean('auto_renewal')->default(false);
             $table->timestamps();
-
         });
     }
 

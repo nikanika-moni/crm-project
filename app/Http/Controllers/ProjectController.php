@@ -39,6 +39,7 @@ class ProjectController extends Controller
     public function store(ProjectRequest $request)
     {
         $project = new Project($request->validated());
+        $project->notes = $request->input('notes');
         $project->save();
 
         if ($project['auto_renewal']) {

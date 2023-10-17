@@ -23,6 +23,11 @@ class User extends Authenticatable
         'password',
     ];
 
+    static public function getEmailSingle($email)
+    {
+        return User::where('email', '=', $email)->first();
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

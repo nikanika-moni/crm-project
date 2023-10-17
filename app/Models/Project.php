@@ -18,6 +18,7 @@ class Project extends Model
         'option',
         'environment_id',
         'member_id',
+        'notes',
     ];
 
     public function environment()

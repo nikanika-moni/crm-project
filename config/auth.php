@@ -69,6 +69,12 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        // 追加
+        'users_custom' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\User::class,
+        ],
     ],
 
     /*

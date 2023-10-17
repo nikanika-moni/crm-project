@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class AuthController extends Controller
 {
@@ -35,7 +37,7 @@ class AuthController extends Controller
 
             // ミドルウェアに対応したリダイレクト(後述)
             // 下記はredirect('/admin')に類似
-            return redirect()->intended('/admin');
+            return redirect()->intended('/');
         }
 
         // ログイン情報が正しくない場合のみ実行される処理(return すると以降の処理は実行されないため)
