@@ -34,9 +34,9 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">Login</button>
-                        <a class="btn btn-link" href="{{ route('auth.reset_password') }}">
+                        <!-- <a class="btn btn-link" href="{{ route('auth.reset_password') }}">
                                     パスワードを忘れた場合
-                                </a>
+                                </a> -->
                     </form>
                 </div>
             </div>

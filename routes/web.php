@@ -46,7 +46,7 @@ Route::post('/crm/login', [AuthController::class, 'login']);
 Route::post('/crm/logout', [AuthController::class, 'logout'])->name('admin.logout');
 
 // パスワードを忘れた場合
-Route::get('/crm/user/change-password', [UserController::class, 'showChangePasswordForm'])->name('user.changePasswordForm');
-Route::post('/crm/user/change-password', 'UserController@changePassword')->name('user.changePassword');
+// Route::get('/crm/user/change-password', [UserController::class, 'showChangePasswordForm'])->name('user.changePasswordForm');
+// Route::post('/crm/user/change-password', 'UserController@changePassword')->name('user.changePassword');
 
 
